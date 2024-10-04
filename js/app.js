@@ -599,9 +599,9 @@ class App {
             me.updateTime();
         }
 
-        if (me.processedData && me.processedData['Last_Updated_Time']) {
+        if (me.processedData && me.processedData['Stats.Last_Updated_Time']) {
             const refreshIntervalText = $('#refreshIntervalText');
-            const dateUpdated = new Date(me.processedData['Last_Updated_Time']);
+            const dateUpdated = new Date(me.processedData['Stats.Last_Updated_Time']);
 
             if (isNaN(dateUpdated.getTime())) {
                 refreshIntervalText.text(`Error: Invalid response, trying again...`);
